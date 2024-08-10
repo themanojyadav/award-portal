@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Award Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="tp_nav"></nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-sm-6 col-12">
+            <button
+              type="button"
+              class="btn btn-menu btn-custom"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <img src="./images/logo_sna.png" alt="Logo" class="header_logo" />
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 col-12 align-items-center justify-content-center d-flex"
+          >
+            <h5 class="mb-0 header_text_title">Award Management Portal</h5>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-end">
+            <img src="./images/logo_moc.png" alt="Logo" class="header_logo" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-start menu-canvas"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="list-group menu-list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action menu-list-group-icon"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action menu-list-group-icon"
+              >Announcements</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action menu-list-group-icon"
+              >Awards</a
+            >
+            <a
+              href="login.html"
+              class="list-group-item list-group-item-action menu-list-group-icon"
+              >Login</a
+            >
+            <a
+              href="register.html"
+              class="list-group-item list-group-item-action menu-list-group-icon"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
+
+    <!-- Register Section -->
+    <section class="login_section py-5 my-4">
+      <div class="container">
+        <div class="login_card card border-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h1 class="mt-3 mb-3 text-danger fw-bold">Register Here</h1>
+                <h1 class="mb-0 mb-5 fw-bolder text-secondary">
+                  Award <br />
+                  Management <br />
+                  System
+                </h1>
+                <p class="mb-0 fw-bold text-secondary">
+                  Already have an account?
+                  <a href="login.html" class="text-danger">Login Here</a>
+                </p>
+              </div>
+              <div class="col-lg-6 col-12">
+                <form action="">
+                  <!-- Nominator/Applicant Type -->
+                  <div class="mb-md-5 mb-3">
+                    <select
+                      name="nominatorType"
+                      id="nominatorType"
+                      class="form-control custom-form-control"
+                      aria-label="Select Nominator or Applicant Type"
+                    >
+                      <option value="">Select Nominator/Applicant Type</option>
+                    </select>
+                  </div>
+
+                  <!-- Name -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name as per Aadhaar/Valid identity proof"
+                      class="form-control custom-form-control"
+                      aria-label="Name as per Aadhaar or valid identity proof"
+                    />
+                  </div>
+
+                  <!-- Mobile Number -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="text"
+                      name="mobileNumber"
+                      id="mobileNumber"
+                      placeholder="Enter your mobile number"
+                      class="form-control custom-form-control"
+                      aria-label="Enter your mobile number"
+                    />
+                  </div>
+
+                  <!-- Email ID -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="text"
+                      name="mobileNumber"
+                      id="mobileNumber"
+                      placeholder="Enter your email id"
+                      class="form-control custom-form-control"
+                      aria-label="Enter your email id"
+                    />
+                  </div>
+
+                  <!-- Date of Birth -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="date"
+                      name="dob"
+                      id="dob"
+                      placeholder="Date of birth"
+                      class="form-control custom-form-control"
+                      aria-label="Date of birth"
+                    />
+                  </div>
+
+                  <!-- Gender -->
+                  <div class="mb-md-5 mb-3">
+                    <select
+                      name="gender"
+                      id="gender"
+                      class="form-control custom-form-control"
+                      aria-label="Select Gender"
+                    >
+                      <option value="">Select Gender</option>
+                    </select>
+                  </div>
+
+                  <!-- Aadhaar Number -->
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      name="aadhaarNumber"
+                      id="aadhaarNumber"
+                      placeholder="Enter Aadhaar Number"
+                      class="form-control custom-form-control"
+                      aria-label="Enter Aadhaar Number"
+                    />
+                  </div>
+
+                  <!-- Checkbox for No Aadhaar -->
+                  <div class="mb-md-5 mb-3 d-flex">
+                    <input
+                      type="checkbox"
+                      name="noAadhaar"
+                      id="noAadhaar"
+                      class="me-2 custom-form-check"
+                      aria-label="If don't have Aadhaar?"
+                    />
+                    <label for="noAadhaar" class="form-label mb-0"
+                      >If don't have Aadhaar?</label
+                    >
+                  </div>
+
+                  <!-- Document Number -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="text"
+                      name="documentNumber"
+                      id="documentNumber"
+                      placeholder="Enter Document Number"
+                      class="form-control custom-form-control"
+                      aria-label="Enter Document Number"
+                    />
+                  </div>
+
+                  <!-- Upload Document -->
+                  <div class="mb-md-5 mb-3">
+                    <input
+                      type="file"
+                      name="uploadDocument"
+                      id="uploadDocument"
+                      placeholder="Upload Document"
+                      class="form-control custom-form-control"
+                      aria-label="Upload Document"
+                    />
+                    <small class="text-danger"
+                      >Document File: Only PDF files are required. Max Size
+                      (500KB)</small
+                    >
+                  </div>
+
+                  <!-- Terms and Conditions Checkboxes -->
+                  <div class="d-flex mb-3">
+                    <input
+                      type="checkbox"
+                      name="terms1"
+                      id="terms1"
+                      class="me-2 custom-form-check"
+                      aria-label="Agree to terms and conditions part 1"
+                    />
+                    <label for="terms1" class="form-label">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptatibus voluptate ullam laudantium earum
+                      reprehenderit incidunt.
+                    </label>
+                  </div>
+
+                  <div class="d-flex mb-3">
+                    <input
+                      type="checkbox"
+                      name="terms2"
+                      id="terms2"
+                      class="me-2 custom-form-check"
+                      aria-label="Agree to terms and conditions part 2"
+                    />
+                    <label for="terms2" class="form-label">
+                      doloremque illum esse impedit nobis quis assumenda sunt
+                      aspernatur, officia voluptatem laboriosam adipisci vitae
+                      necessitatibus.
+                    </label>
+                  </div>
+
+                  <!-- Button -->
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-custom-2 btn-lg">
+                      Submit
+                      <i class="fas fa-paper-plane btn-right-icon"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-0">&copy; All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
